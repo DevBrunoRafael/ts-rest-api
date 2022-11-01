@@ -9,7 +9,7 @@ const departmentController = new DepartmentController();
 departmentRoutes.post('/', departmentController.createDepartment);
 departmentRoutes.get('/:id', departmentController.getOneDepartment);
 departmentRoutes.get('/', departmentController.getAllDepartments);
-departmentRoutes.delete('/', departmentController.deleteDepartment);
+departmentRoutes.delete('/:id', departmentController.deleteDepartment);
 
 
 export default departmentRoutes;

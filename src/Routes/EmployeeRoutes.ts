@@ -7,10 +7,10 @@ const employeeRoutes = Router();
 const employeeController = new EmployeeController();
 
 employeeRoutes.post('/:dptId', employeeController.createEmployee);
-employeeRoutes.get('/:id', employeeController.getOneEmployee);
+employeeRoutes.get('/:cpf', employeeController.getOneEmployee);
 employeeRoutes.get('/', employeeController.getAllEmployees);
-employeeRoutes.patch('/:id', employeeController.updateEmployee);
-employeeRoutes.delete('/:id', employeeController.deleteEmployees);
+employeeRoutes.patch('/:cpf', employeeController.updateEmployee);
+employeeRoutes.delete('/:cpf', employeeController.deleteEmployees);
 
 
 export default employeeRoutes;
